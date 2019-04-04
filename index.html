@@ -7,7 +7,7 @@
 }
 
 body {
-  font-family: Palatino;
+  font-family: Courier;
   padding: 5px;
   background: #111;
 }
@@ -53,26 +53,11 @@ body {
   margin-top: 10px;
 }
 
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
 /* Footer */
 .footer {
   padding: 1px;
   text-align: center;
   background: #7a527a;
-}
-
-/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 800px) {
-  .leftcolumn, .rightcolumn {   
-    width: 100%;
-    padding: 0;
-  }
 }
 
 /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
@@ -93,7 +78,7 @@ body {
 
 <div class="topnav">
   <a href="https://www.linkedin.com/in/saniaarif/">LinkedIn</a>
-  <a href="https://github.com/saniaarif22" style="float:right">Github</a>
+  <a href="https://github.com/saniaarif22">Github</a>
 </div>
 
 <div class="row">
@@ -101,13 +86,14 @@ body {
     <div class="card">
       <h3>Work</h3>
       <h2>Spotify</h2>
-      <h5>Software Engineer</h5>
+      <h4>Software Engineer</h4>
+      <p>Spotify is one of the fastest growing companies in the world and it has revolutionized the way people listen to music. Being available to users free of cost, they earn a chunk of their revenue from advertisements, making the ads team one of the biggest teams at the company. Spotify has numerous techniques to present targeted ads to users based on their user activity, and also deals with management of a lot of data. </p>
       <p>I have been with Spotify's Ads team for the past 2 years. I have helped build a self-serve ad-platform for advertisers to create and manage their own Ad campaigns.</p>
     </div>
     <div class="card">
       <h3>Education</h3>
       <h2>Columbia University</h2>
-      <h5>Master of Science, Computer Science</h5>
+      <h4>Master of Science, Computer Science</h4>
       <p>I graduated from Columbia University in 2016 with a Masters' in Computer Science. My concentration track was Software Systems.</p>
     </div>
   </div>
