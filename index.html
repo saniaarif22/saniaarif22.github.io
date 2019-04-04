@@ -1,20 +1,122 @@
+<!DOCTYPE html>
 <html>
-  <head>
-    <title>
-      Hello World
-    </title>
-  </head>
-  <body>
-    <h1>
-      Hello World :)
-    </h1>
-    <h2>
-      This is a sample website.
-    </h2>
-    <br>
-    <h2>
-      <a href="two.html">Click here</a> to go to the next page.
-    </h2>
-  </body>
-  
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Palatino;
+  padding: 5px;
+  background: #111;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 20px;
+  text-align: center;
+  background: #b38099;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #993366;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  text-shadow: 0.5px 0.5px;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #b38099;
+  color: black;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: #b38099;
+  padding: 20px;
+  margin-top: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 1px;
+  text-align: center;
+  background: #993366;
+  margin-top: 10px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Sania Arif</h1>
+  <p>I make computers go beep boop boop.</p>
+</div>
+
+<div class="topnav">
+  <a href="https://www.linkedin.com/in/saniaarif/">LinkedIn</a>
+  <a href="https://github.com/saniaarif22" style="float:right">Github</a>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h3>Work</h3>
+      <h2>Spotify</h2>
+      <h5>Software Engineer</h5>
+      <p>I have been with Spotify's Ads team for the past 2 years. I have helped build a self-serve ad-platform for advertisers to create and manage their own Ad campaigns.</p>
+    </div>
+    <div class="card">
+      <h3>Education</h3>
+      <h2>Columbia University</h2>
+      <h5>Master of Science, Computer Science</h5>
+      <p>I graduated from Columbia University in 2016 with a Masters' in Computer Science. My concentration track was Software Systems.</p>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+<p>Be kind</p>
+</div>
+
+</body>
 </html>
